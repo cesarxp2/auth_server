@@ -30,7 +30,7 @@ Open your browser and surf to your localhost:3000 (unless otherwise specified by
 
 
 #### Having trouble installing?
-### See the project live [here](https://minolta-assignment.herokuapp.com/)
+### See the project live here - [https://minolta-assignment.herokuapp.com/](https://minolta-assignment.herokuapp.com/)
 
 
 
