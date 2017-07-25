@@ -93,12 +93,11 @@ passport.use(new LocalStrategy((username, password, done) => {
 }));
 
 passport.serializeUser(function(user, done) {
- //
  var token = jwt.sign(user, app.get('superSecret'), {expiresIn: 60 *24});
 
  // return the information including token as JSON
  localStorage.setItem('token', token);
- //
+ // End
  done(null, user.username);
 });
 
