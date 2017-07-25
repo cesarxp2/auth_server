@@ -1,6 +1,6 @@
 # Authentication Server Project
 
-I decided to choose the "Authentication Server Project" because I felt this was the most challenging and one that I had only practiced a few times. This was also a chance for me to gain new knowledge and get practice on something I believe is important.
+I decided to choose the "Authentication Server" project because I truly wanted to challenge myself and I felt I could gain new knowledge with some extra practice. 
 
 ## Getting Started
 
