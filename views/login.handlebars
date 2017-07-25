@@ -1,0 +1,34 @@
+<div id='loginContainer'>
+ <div id='pageTitle'>
+ <div id='firstLetter' class='wow animated fadeInLeft' data-wow-delay=".2s">W</div>
+  <div id='secondLetter' class='wow animated fadeInLeft' data-wow-delay=".4s">e</div>
+   <div id='thirdLetter' class='wow animated fadeInLeft' data-wow-delay=".6s">l</div>
+    <div id='fourthLetter' class='wow animated fadeInLeft' data-wow-delay=".8s">c</div>
+     <div id='fifthLetter' class='wow animated fadeInLeft' data-wow-delay="1.1s">o</div>
+      <div id='sixthLetter' class='wow animated fadeInLeft' data-wow-delay="1.3s">m</div>
+       <div id='seventhLetter' class='wow animated fadeInLeft' data-wow-delay="1.5s">e</div>
+  </div>
+ <form action="/users/login" method='POST' class="form-container animated fadeIn">
+  <div id='msgContainer'>
+   {{#if error}}
+    <div id='errorMsg'>
+     {{error}}
+    </div>
+   {{/if}}
+  </div>
+  <div class="form-title">
+   <h2>Login</h2> </div>
+
+  <div class="form-title">Username</div>
+  <input class="form-input" type="text" name="username" placeholder="Username" /><br />
+  <div class="form-title">Password</div>
+  <input class="form-input" type="password" name="password" placeholder="Password" /><br />
+  <div class="submit-container">
+   <input class="submit-button" type="submit" value="Log In" />
+  </div>
+ </form>
+ <div id='registerDialog' class="animated fadeInLeft">
+  New to town? <a href='/users/register'>Register here</a>
+  </a/>
+ </div>
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <link rel='stylesheet' href='/css/style.css' />
+  <link rel='stylesheet' href='/css/animate.css' />
+ <title> Konica Minolta Assignment </title>
+</head>
+
+<body>
+ <div id='messageContainer'>
+  {{#if success_msg}}
+   <div id='successMessage'>
+    {{success_msg}}
+   </div>
+  {{/if}}
+ </div>
+ {{{body}}}
+</body>
+<script src="/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</html>

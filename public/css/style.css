@@ -1,0 +1,255 @@
+/* GLOBAL CSS */
+
+body {
+ margin: 0;
+}
+
+.form-container {
+ border: 1px solid #ffffff;
+ background: #e6c5c1;
+ background: radial-gradient(ellipse at center, rgb(91, 101, 113) 11%, rgb(82, 90, 101) 41%, rgb(65, 71, 78) 65%, rgb(63, 65, 68) 72%);
+ border-radius: 8px;
+ box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+ font-family: 'Helvetica Neue', Helvetica, sans-serif;
+ text-decoration: none;
+ vertical-align: middle;
+ min-width: 300px;
+ padding: 20px;
+ width: 300px;
+}
+
+.form-input {
+ border: 1px solid #9c9c9c;
+ background: #ffffff;
+ border-radius: 4px;
+ color: #2e2d2b;
+ box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+ padding: 8px;
+ margin-bottom: 20px;
+ width: 280px;
+}
+
+.form-input:focus {
+ background: #ffffff;
+ color: #000000;
+}
+
+.form-container h2 {
+ font-size: 40px;
+ margin: 0 0 10px 0;
+ font-weight: 100;
+ text-align: center;
+}
+
+.form-title {
+ margin-bottom: 10px;
+ color: #f9f9f9;
+}
+
+.submit-container {
+ margin: 8px 0;
+ text-align: right;
+}
+
+.submit-button {
+ border: 1px solid #3d3d3d;
+ background: #95a7ad;
+ background: -webkit-linear-gradient(top, #7487a0, #fbfbfb);
+ border-radius: 4px;
+ box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+ color: #353434;
+ font-family: helvetica, serif;
+ padding: 8.5px 18px;
+ font-size: 14px;
+ vertical-align: middle;
+}
+
+.submit-button:hover {
+ border: 1px solid #262b2b;
+ background: #aed4d4;
+ background: -webkit-linear-gradient(top, #d9e0df, #ffd8d8);
+ color: #353434;
+}
+
+.submit-button:active {
+ border: 1px solid #262b2b;
+ background: #aed4d4;
+ background: -webkit-linear-gradient(top, #d9e0df, #ffd8d8);
+ color: #353434;
+}
+
+.fadeInLeft {
+ padding: 2px;
+}
+
+
+/* END */
+
+
+/* REGISTER VIEW CSS */
+
+#pageTitleRegister {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#errorMessages {
+ border: 1px solid white;
+ height: 25px;
+ background: #f5c7c7;
+ color: #444;
+ border-radius: 3px;
+ font-size: .9rem;
+ margin: 10px;
+ text-align: center;
+}
+
+#registerContainer {
+ background: radial-gradient(circle farthest-side at right bottom, #f1f1f1 5%, #f8cdcd 25%, #1d4664 80%, #132c48 98%);
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+#loginDialog {
+ font-family: 'Helvetica Neue', Helvetica, sans-serif;
+ margin: 15px;
+ color: #fff;
+ font-size: 15px;
+}
+
+
+/* END */
+
+
+/* LOGIN VIEW CSS */
+
+#pageTitle {
+ font-size: 4rem;
+ display: flex;
+ color: #fff;
+ margin: 20px;
+}
+
+#loginContainer {
+ background: radial-gradient(circle farthest-side at right bottom, #f1f1f1 5%, #f8cdcd 25%, #1d4664 80%, #132c48 98%);
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+#registerDialog {
+ font-family: 'Helvetica Neue', Helvetica, sans-serif;
+ margin: 15px;
+ color: #fff;
+ font-size: 15px;
+}
+
+#errorMsg {
+ border: 1px solid white;
+ background: #f5c7c7;
+ width: 300px;
+ height: 35px;
+ border-radius: 3px;
+ color: #444;
+ text-align: center;
+ font-size: .9rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#msgContainer {
+ position: absolute;
+ top: 20vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
+
+
+/* END */
+
+
+/* LAYOUTS VIEW */
+
+#successMessage {
+ border: 1px solid white;
+ background: #def3de;
+ width: 300px;
+ height: 35px;
+ border-radius: 3px;
+ color: #444;
+ text-align: center;
+ font-size: .9rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#messageContainer {
+ position: absolute;
+ top: 20vh;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+/* END */
+
+
+/* INDEX CSS */
+
+#indexBody {
+ background: radial-gradient(circle farthest-side at right bottom, #f1f1f1 5%, #f8cdcd 25%, #1d4664 80%, #132c48 98%);
+ width: 100vw;
+ height: 100vh;
+}
+
+#bodyHolder {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ color: #fff;
+}
+
+#funnyMeme {
+ border: 10px solid black;
+ border-radius: 5px;
+}
+
+#logoutButton {
+ font-family: Helvetica;
+ font-size: 1rem;
+ color: #fff;
+ border: 1px solid;
+ padding: 10px;
+ border-radius: 100px;
+ text-decoration: none;
+ background: #da8288;
+ box-shadow: 1px 1px 5px 0px #444;
+ margin: 20px;
+}
+
+#logoutButton:active {
+ font-family: Helvetica;
+ font-size: 1rem;
+ color: #fff;
+ border: 1px solid;
+ padding: 10px;
+ border-radius: 100px;
+ text-decoration: none;
+ background: #d4656c;
+ box-shadow: 1px 1px 5px 0px #444;
+ margin: 20px;
+}

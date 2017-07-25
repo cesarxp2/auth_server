@@ -1,0 +1,47 @@
+<div id='registerContainer'>
+ <form action="/users/register" method='POST' class="form-container animated fadeIn">
+  {{#if errors}}
+   {{#each errors}}
+   <div id='errorMessages'>
+    {{msg}}
+   </div>
+   {{/each}}
+  {{/if}}
+  {{#if error_msg}}
+   <div id='errorMessages'>
+    {{error_msg}}
+   </div>
+  {{/if}}
+
+
+  <div class="form-title"><h2 id='pageTitleRegister'>
+   <div class='wow animated fadeInLeft' data-wow-delay=".2s">R</div>
+    <div class='wow animated fadeInLeft' data-wow-delay=".3s">e</div>
+     <div class='wow animated fadeInLeft' data-wow-delay=".4s">g</div>
+      <div class='wow animated fadeInLeft' data-wow-delay=".5s">i</div>
+       <div class='wow animated fadeInLeft' data-wow-delay=".6s">s</div>
+        <div class='wow animated fadeInLeft' data-wow-delay=".7s">t</div>
+         <div class='wow animated fadeInLeft' data-wow-delay=".8s">e</div>
+          <div class='wow animated fadeInLeft' data-wow-delay=".9s">r</div>
+          </h2>
+ </div>
+
+  <div class="form-title">Name</div>
+  <input class="form-input" type="text" name="name" placeholder="Name" /><br />
+  <div class="form-title">Email</div>
+  <input class="form-input" type="text" name="email" placeholder="Email" /><br />
+  <div class="form-title">Username</div>
+  <input class="form-input" type="text" name="username" placeholder="Username" /><br />
+  <div class="form-title">Password</div>
+  <input class="form-input" type="password" name="password" placeholder="Password" /><br />
+  <div class="form-title">Confirm Password</div>
+  <input class="form-input" type="password" name="passCheck" placeholder="Confirm password" /><br />
+  <div class="submit-container">
+   <input class="submit-button" type="submit" value="Submit" />
+  </div>
+ </form>
+ <div id='loginDialog' class='animated fadeInRight'>
+  Already a member? <a href='/users/login'>Login here </a>
+  </a/>
+ </div>
+</div>
