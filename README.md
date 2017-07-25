@@ -26,8 +26,12 @@ $ npm start
 
 Open your browser and surf to your localhost:3000 (unless otherwise specified by your command line)
 
+
+
+
 #### Having trouble installing?
 ### See the project live [here](https://minolta-assignment.herokuapp.com/)
+
 
 
 
