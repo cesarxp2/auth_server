@@ -1,6 +1,6 @@
 # Authentication Server Project
 
-I decided to choose the "Authentication Server" project because I truly wanted to challenge myself and I felt I could gain new knowledge with some extra practice. 
+I decided to choose the "Authentication Server" project because I truly wanted to challenge myself and I felt I could gain new knowledge with some extra practice.
 
 ## Getting Started
 
@@ -40,6 +40,10 @@ Bonus points:
 - Store user information in a self contained database (SQLite)
 - User account creation
 - Does not allow manual login using URL if not authenticated
+
+## Languages
+
+Javascript & HTML/CSS
 
 ## Dependencies
 
