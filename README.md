@@ -2,10 +2,8 @@
 
 I decided to choose the "Authentication Server" project because I truly wanted to challenge myself and I felt I could gain new knowledge with some extra practice.
 
-Having trouble installing?
-## See the project live [here](https://minolta-assignment.herokuapp.com/)
 
-## Getting Started
+### Getting Started
 
 These instructions will get you up and running on your local machine to test out my project.
 
@@ -27,6 +25,11 @@ $ npm start
 ```
 
 Open your browser and surf to your localhost:3000 (unless otherwise specified by your command line)
+
+Having trouble installing?
+### See the project live [here](https://minolta-assignment.herokuapp.com/)
+
+
 
 ## Miscellaneous
 
