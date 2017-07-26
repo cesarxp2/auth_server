@@ -10,7 +10,28 @@ const express = require('express'),
  LocalStrategy = require('passport-local').Strategy;
 
 router.get('/', ensureAuthentication, (req, res) => {
- res.render('index')
+ let token = localStorage.getItem('token'),
+  objInfo = {
+   success: true,
+   message: 'Here is the token passed in through the response',
+   token
+  };
+
+ jwt.verify(token, app.get('superSecret'), function(err, decoded) {
+  if (err) {
+   let errors = [
+    {
+     param: 'notVerified',
+     msg: 'Please try logging in',
+     value: ''
+    }
+   ];
+   return res.render('register', {errors: errors});
+  } else {
+   req.decoded = decoded;
+   res.render('index', {objInfo})
+  }
+ })
 });
 
 function ensureAuthentication(req, res, next) {

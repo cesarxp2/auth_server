@@ -5,6 +5,14 @@
 
   <img id='funnyMeme' src='/css/mind_control.jpg' class='animated fadeIn' />
 
+  {{#if objInfo}}
+    <div id='tokenMessage'>
+      <b>success:</b> {{objInfo.success}} <br />
+     <b>message:</b> {{objInfo.message}} <br />
+    <b>token</b>: {{objInfo.token}}
+    </div>
+    {{/if}}
+
   <a id='logoutButton' href='/users/logout'> LOGOUT </a>
 
   <h3> Click these buttons and check your console messages in the command line </h3>

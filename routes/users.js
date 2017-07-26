@@ -94,10 +94,7 @@ passport.use(new LocalStrategy((username, password, done) => {
 
 passport.serializeUser(function(user, done) {
  var token = jwt.sign(user, app.get('superSecret'), {expiresIn: 60 *24});
-
- // return the information including token as JSON
  localStorage.setItem('token', token);
- // End
  done(null, user.username);
 });
 
@@ -113,7 +110,7 @@ router.post('/login', passport.authenticate('local', {
  failureRedirect: '/users/login',
  failureFlash: 'Invalid username or password'
 }), (req, res) => {
- res.redirect('/');
+ res.redirect('/')
 });
 
 //ENDPOINT USED FOR LOGGIN OUT

@@ -253,3 +253,9 @@ body {
  box-shadow: 1px 1px 5px 0px #444;
  margin: 20px;
 }
+
+#tokenMessage {
+ word-break: break-word;
+ width: 500px;
+ height: 180px;
+}
