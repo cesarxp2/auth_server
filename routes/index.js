@@ -41,19 +41,19 @@ function ensureAuthentication(req, res, next) {
   res.redirect('/users/login');
  }
 };
-
-router.get('/viewjwt', (req, res) => {
- let token = localStorage.getItem('token');
- console.log('THIS IS YOUR TOKEN', token);
- res.end();
-});
-
-router.get('/viewdb', (req, res) => {
- let viewDBQuery = `SELECT * FROM users`;
- db.each(viewDBQuery, (err, allUsers) => {
-  console.log('THIS IS THE DATABASE INFO', allUsers);
- });
- res.end();
-});
+//
+// router.get('/viewjwt', (req, res) => {
+//  let token = localStorage.getItem('token');
+//  console.log('THIS IS YOUR TOKEN', token);
+//  res.end();
+// });
+//
+// router.get('/viewdb', (req, res) => {
+//  let viewDBQuery = `SELECT * FROM users`;
+//  db.each(viewDBQuery, (err, allUsers) => {
+//   console.log('THIS IS THE DATABASE INFO', allUsers);
+//  });
+//  res.end();
+// });
 
 module.exports = router;
